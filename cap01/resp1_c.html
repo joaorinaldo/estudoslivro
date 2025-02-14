@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de pagamento</title>
+</head>
+<script>
+    // Elaborar um programa para uma loja, qual leia o preço de um produto e informe as opções de pagamento da loja, Calcule e informe o valor para pagamento á vista com 10% de desconto e o valor 3 em 3x
+
+    /*
+    preço R$: 60.00
+    A vísta: R$: 54.00
+    Ou 3x de R$: 20.00
+    */
+    /* Entrada - Processamento - Saída
+
+    Entrada -  preço do produto que foi comprado
+    Processamento - calcular 2 valores a partir do preço do produto
+    1 - preço - 10%  | preço - (preço * 0,1) temos o preço com 10 % de desconto
+    2 - preço / 3 |  temos o preço dividido em 3x no cartão
+    Saída - as duas opções de pagamento 
+
+    */
+
+    const valorProduto = Number(prompt("Qual o valor do produto"))
+
+    const dezPorCentodeDesconto = valorProduto - (valorProduto * 0.1)
+    const parceladoemTres = valorProduto / 3
+    console.log({valorProduto, dezPorCentodeDesconto, parceladoemTres})
+    alert("Veja bem: as formas de pagamento nessa loja são: \n 3x sem juros no cartao \n A vista com 10% de desconto")
+    alert(`Sua conta total deu R$ ${valorProduto} \n Como prefere pagar? \n Dividido em 3x de ${parceladoemTres.toFixed(2)} ou \n A vista com desconto de 10% de desconto R$ ${dezPorCentodeDesconto.toFixed(2)}`)
+   
+</script>
+<body>
+    
+</body>
+</html>

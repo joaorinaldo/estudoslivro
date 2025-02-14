@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide conta</title>
+</head>
+<script>
+    // Elaborar um programa para uma pizzaria, o qual leia o valor total de uma contae quantos clientes vão paga-lá. Calcule e informe o valor a ser pago por cada cliente 
+
+    /*
+    valor da conta: R$ 90.00
+    Numero de clientes: 3
+    Valor por cliente: 30.00
+    */
+   /* Entrada - Processamento - Saída
+
+    Entrada -  valor da conta e quantidade de clientes
+    Processamento - pegar o valor da conta e dividir pelo total de clientes
+    Saída - o resultado sera o valor que vai dar para cada cliente 
+
+    */
+   const valorConta = Number(prompt("Informe o valor da conta"));
+   const qtdeClientes = Number(prompt("Informe a quantidade de cliente: "));
+   const valorDividido = valorConta/qtdeClientes
+   console.log({ valorConta, qtdeClientes, valorDividido})
+   alert(`O valor da conta foi ${valorConta}, que dividido em ${qtdeClientes} deu um total de R$ ${valorDividido.toFixed(2)} para cada!`)
+
+
+
+
+   
+</script>
+<body>
+    
+</body>
+</html>

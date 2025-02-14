@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizinhos</title>
+</head>
+<script>
+    // Elaborar um programa que leia um numero. Calcule e informe os seus vizinhos, ou seja o numero anterior e o posterior 
+
+    /*
+    Numero: 15
+    Vizinhos: 14 e 16
+    */
+
+    /* Entrada - Processamento - Saída
+
+    Entrada -  Apenas o numero que o usuario desejar 
+    Processamento - Calcular o numero escolhido +1 ou -1, podemos usar o operador logico de acrescentear e decrescentear ou fazer uma soma simples 
+    Saída - Os dois resutados da soma como "Vizinhos"
+
+    */
+
+    let numero = Number(prompt("Informe um numero: "))
+    let vizinhoMaior = numero + 1;
+    let vizinhoMenor = numero - 1;
+    console.log({ numero, vizinhoMaior, vizinhoMenor})
+    alert(`O vizinho maior desse numero é ${vizinhoMaior} e o vizinho menor desse numero é ${vizinhoMenor}`)
+
+</script>
+<body>
+    
+</body>
+</html>
